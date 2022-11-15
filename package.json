@@ -3,6 +3,10 @@
 	"version": "1.0.0",
 	"description": "Labo 3 Testing Future Technologies",
 	"main": "index.js",
+	"workspaces": [
+		"backend",
+		"frontend"
+	],
 	"devDependencies": {
 		"prettier": "^2.7.1"
 	},
