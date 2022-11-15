@@ -2,6 +2,9 @@
  * @jest-environment jsdom
  */
 // https://test-utils.vuejs.org/guide/
+
+//This doesn't work, because we're not using a real browser "fetch is not defined"
+// 🤔 Weird, I'm using node v19.0.0, fetch should be defined...
 /*
 import { mount, flushPromises } from "@vue/test-utils";
 import Register from "../src/components/Register.vue";
@@ -19,6 +22,10 @@ test("Test register", async () => {
 });
 */
 
+// For testing the frontend using puppeteer, we need to start the server first
+// npm run dev -w backend
+// npm run test -w frontend
+// then we can run this test file with "npm run test -w frontend"
 import puppeteer from "puppeteer";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
