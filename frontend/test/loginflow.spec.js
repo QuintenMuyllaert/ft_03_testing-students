@@ -26,6 +26,7 @@ test("Test register", async () => {
 // npm run dev -w backend
 // npm run test -w frontend
 // then we can run this test file with "npm run test -w frontend"
+/*
 import puppeteer from "puppeteer";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -49,3 +50,4 @@ test("Test register", async () => {
 	expect(text).toBe("marty");
 	await browser.close();
 });
+*/
