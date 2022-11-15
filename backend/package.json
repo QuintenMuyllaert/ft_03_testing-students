@@ -5,7 +5,7 @@
 	"main": "auth.js",
 	"type": "module",
 	"scripts": {
-		"test": "node --trace-warnings  node_modules/jest/bin/jest.js --watchAll --verbose"
+		"test": "node --trace-warnings  ../node_modules/jest/bin/jest.js --watchAll --verbose"
 	},
 	"keywords": [],
 	"author": "",
