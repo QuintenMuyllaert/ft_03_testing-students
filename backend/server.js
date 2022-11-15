@@ -14,11 +14,23 @@ app.get("/", function (request, response) {
 });
 
 app.post("/register", function (request, response) {
-	// TODO: return the result of Register called with the post data
+	// return the result of Register called with the post data
+	if (!request.body.username || !request.body.password) {
+		response.status(400).send("Bad request");
+		return;
+	}
+
+	response.send(Register(request.body.username, request.body.password));
 });
 
 app.post("/login", function (request, response) {
-	// TODO: return the result of Login called with the post data
+	// return the result of Login called with the post data
+	if (!request.body.username || !request.body.password) {
+		response.status(400).send("Bad request");
+		return;
+	}
+
+	response.send(Login(request.body.username, request.body.password));
 });
 
 const port = 9000;
