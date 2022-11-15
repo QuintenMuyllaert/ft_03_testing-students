@@ -6,10 +6,12 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"test": "node --trace-warnings  --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --verbose"
+		"test": "node --trace-warnings  --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --verbose",
+		"start":"serve dist"
 	},
 	"dependencies": {
 		"nock": "^13.2.9",
+		"serve": "^14.1.1",
 		"vee-validate": "^4.7.3",
 		"vue": "^3.2.41"
 	},
