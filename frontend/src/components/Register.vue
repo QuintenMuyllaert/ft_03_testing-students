@@ -34,11 +34,11 @@ async function onSubmit(values) {
 		<Form @submit="onSubmit">
 			<div class="form-group">
 				<label>Username</label>
-				<Field name="marty" type="text" class="form-control" />
+				<Field name="username" type="text" class="form-control" />
 			</div>
 			<div class="form-group">
 				<label>Password</label>
-				<Field name="password123" type="password123" class="form-control" />
+				<Field name="password" type="password" class="form-control" />
 			</div>
 			<div class="form-group">
 				<button class="btn btn-primary" type="submit">Register</button>
