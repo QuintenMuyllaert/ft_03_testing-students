@@ -1,0 +1,24 @@
+{
+	"name": "ft_03_testing-students",
+	"version": "1.0.0",
+	"description": "Labo 3 Testing Future Technologies",
+	"main": "index.js",
+	"devDependencies": {
+		"prettier": "^2.7.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/QuintenMuyllaert/ft_03_testing-students.git"
+	},
+	"keywords": [],
+	"author": "Quinten Muyllaert",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/QuintenMuyllaert/ft_03_testing-students/issues"
+	},
+	"homepage": "https://github.com/QuintenMuyllaert/ft_03_testing-students#readme"
+}
