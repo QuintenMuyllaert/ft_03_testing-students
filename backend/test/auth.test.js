@@ -25,5 +25,12 @@ describe("User flow", () => {
 	});
 });
 describe("User flow EXTRA", () => {
-	it.todo("Verify JWT token");
+	it("Verify JWT token", async () => {
+		const token = Login("marty", "password123");
+
+		const jsonwebtoken = await import("jsonwebtoken");
+		const decoded = jsonwebtoken.verify(token, "secret");
+
+		expect(decoded.username).toBe("marty");
+	});
 });
