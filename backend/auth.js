@@ -37,7 +37,15 @@ export const Login = (username, password) => {
 };
 
 export const Delete = (username) => {
-	// TODO: delete a user from "the users", return ok
+	// delete a user from "the users", return ok
+	// if user does not exist, return error
+	const user = data.users.find((user) => user.username === username);
+	if (!user) {
+		return "user does not exist";
+	}
+
+	data.users = data.users.filter((user) => user.username !== username);
+	return "ok";
 };
 
 export default {
